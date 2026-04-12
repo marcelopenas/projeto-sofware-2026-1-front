@@ -58,7 +58,7 @@ export default function PessoasApp() {
       // 2. Busca as connections usando o id
       const connRes = await fetch(`${BASE_URL_CONNECTIONS}/connections/${userId}`, {
         headers: {
-          // Authorization: `Bearer ${token}`,
+           Authorization: `Bearer ${token}`,
         },
       });
 
