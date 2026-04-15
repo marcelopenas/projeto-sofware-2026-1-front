@@ -12,6 +12,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.8.0",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/config": "^0.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
