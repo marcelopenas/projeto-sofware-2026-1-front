@@ -27,7 +27,7 @@ export default function PessoasApp() {
         setToken(accessToken);
 
         const payload = JSON.parse(atob(accessToken.split(".")[1]));
-        const roles = payload["https://social-insper.com/roles"] || [];
+        const roles = payload[import.meta.env.ROLES_NAMESPACE] || [];
         setIsAdmin(roles.includes("ADMIN"));
       } catch (e) {
         console.error("Erro ao buscar token:", e);
